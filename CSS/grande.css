@@ -1,0 +1,385 @@
+@media (min-width: 1025px) {
+
+    :root {
+        --main-color: #F7CD05;
+        --bg-color: rgba(250, 250, 250, 1);
+        --dark-font-color: #464646;
+        --light-font-color: rgb(219, 219, 219);
+        --font-size-text: 1.5vw;
+        --padding-section: 3vw;
+        --font-size-head: 2vw;
+        --font-size-title: 2.5vw;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 8vw 0 0 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: var(--font-size-text);
+        background-color: #ffea7e;
+        color: var(--dark-font-color);
+    }
+
+    .abraco {
+        color: var(--main-color);
+        text-shadow: 1px 1px 0px black;
+    }
+
+    /* Header */
+
+    header {
+        background-image: url(../IMAGENS/pessoas_caminhando.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        position: relative;
+    }
+
+    .fixed-header {
+        border-top: 5px solid var(--main-color);
+        background-color: var(--bg-color);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: .5vw 3vw;
+        z-index: 10;
+        box-shadow: 50vw 5px 100px black, -48.9vw 5px 100px black;
+    }
+
+    .fixed-header a {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+    }
+
+    .fixed-header img {
+        width: 7vw;
+    }
+
+    .fixed-header a span {
+        position: relative;
+        bottom: 2vw;
+        font-size: var(--font-size-head);
+    }
+
+    .fixed-header nav {
+        display: inline-block;
+        position: relative;
+        font-size: var(--font-size-head);
+        left: 25vw;
+        bottom: 2.5vw;
+    }
+
+    .fixed-header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fixed-header nav li {
+        display: inline-block;
+    }
+
+    .fixed-header li {
+        margin-right: 2vw;
+    }
+
+    .fixed-header li:last-child {
+        margin-right: 0;
+    }
+
+    .fixed-header li a {
+        text-shadow: 0px 0px 0px black;
+        transition: color .3s linear, text-shadow .3s linear;
+    }
+
+    .fixed-header li a:hover {
+        color: var(--main-color);
+        text-shadow: 1px 1px 1px black;
+        transition: color .3s linear, text-shadow .3s linear;
+    }
+
+    .mask {
+        overflow: auto;
+        padding: 10vw;
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .costas {
+        background-image: url(../IMAGENS/costas_camisa.jpg);
+        background-position: center;
+        background-size: 40vw;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+        float: left;
+    }
+
+    .header-main {
+        color: var(--light-font-color);
+    }
+
+    .header-main blockquote {
+        position: relative;
+        top: 7vw;
+        margin: auto;
+        display: block;
+        width: 30vw;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .header-main h1 {
+        display: inline-block;
+        width: fit-content;
+        position: relative;
+        left: 30vw;
+        top: 10vw;
+        font-size: var(--font-size-head);
+    }
+
+    /* Main */
+
+    #intro {
+        padding: var(--padding-section);
+    }
+
+    #intro h1 {
+        text-align: center;
+        font-size: var(--font-size-title);
+    }
+
+    #intro h1:first-child{
+        margin-top: 0;
+    }
+
+    .intro-content {
+        margin: auto;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .intro-content p {
+        position: relative;
+        bottom: 5vw;
+    }
+
+    .intro-content p {
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+    }
+
+    #intro img {
+        width: 15vw;
+        display: inline-block;
+        margin: 0 3vw;
+    }
+
+    .intro-porisso {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #projeto {
+        border: .1px solid transparent;
+        background-color: var(--bg-color);
+        padding: var(--padding-section);
+        border-bottom: 5px solid var(--main-color);
+    }
+
+    #projeto h1 {
+        margin-top: 0;
+        text-align: center;
+        font-size: var(--font-size-title);
+    }
+
+    .projeto-content {
+        text-align: center;
+    }
+
+    .projeto-primeiro {
+        margin-bottom: 2vw;
+    }
+
+    .projeto-img {
+        display: inline-block;
+        width: 30%;
+        height: 18vw;
+    }
+
+    .projeto-card {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
+    }
+
+    .apoio {
+        background-image: url(../IMAGENS/grupo_de_apoio.jpg);
+    }
+
+    .musica {
+        background-image: url(../IMAGENS/aula_musica.jpeg);
+    }
+
+    .bazar {
+        background-image: url(../IMAGENS/ação_social.jpg);
+    }
+
+    .infantil {
+        background-image: url(../IMAGENS/projeto_infantil.jpg);
+    }
+
+    .palestras {
+        background-image: url(../IMAGENS/palestras.jpg);
+    }
+
+    #contato {
+        border-top: 5px solid var(--main-color);
+        background-color: var(--bg-color);
+        padding: var(--padding-section);
+        text-align: center;
+    }
+
+    #contato h1 {
+        text-align: center;
+        font-size: var(--font-size-title);
+    }
+
+    #contato div {
+        display: inline-block;
+        text-align: left;
+    }
+
+    #contato .email {
+        margin: 0 5vw;
+    }
+
+    #contato ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contato ul li {
+        display: inline-block;
+        font-size: var(--font-size-title);
+    }
+
+    #contato ul li:first-child {
+        color: #4267B2;
+    }
+
+    #contato ul li:nth-child(2) {
+        margin-left: 3vw;
+        color: black;
+    }
+    
+    #contato ul li a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    #colab {
+        text-align: center;
+        padding: var(--padding-section);
+    }
+
+    #colab h1 {
+        font-size: var(--font-size-title);
+    }
+
+    #colab div {
+        display: inline-block;
+    }
+
+    .voluntario a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .voluntario {
+        margin-right: 5vw;
+    }
+
+    .voluntario img {
+        width: 15vw;
+    }
+
+    .cel {
+        display: none !important;
+    }
+
+    .doar img {
+        width: 15vw;
+    }
+
+    /* Footer */
+
+    footer {
+        background-color: var(--bg-color);
+        text-align: center;
+        padding: var(--padding-section);
+    }
+
+    .map {
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        bottom: 1.5vw;
+    }
+
+    .map ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .map li {
+        margin-bottom: 1.5vw;
+        padding: .5vw;
+    }
+
+    .map li:last-child {
+        margin: 0;
+    }
+
+    .map li a {
+        text-decoration: none;
+        color: inherit;
+        text-shadow: 0px 0px 0px black;
+        transition: color .3s linear, text-shadow .3s linear;
+    }
+
+    .map li a:hover {
+        color: var(--main-color);
+        text-shadow: 1px 1px 1px black;
+        transition: color .3s linear, text-shadow .3s linear;
+    }
+
+    footer address {
+        display: inline-block;
+        margin: 0 3vw;
+    }
+
+    footer address .email {
+        margin: 1vw 0;
+    }
+
+    footer address iframe {
+        width: 17vw;
+        height: 17vw;
+    }
+
+    footer img {
+        display: inline-block;
+        width: 17vw;
+    }
+}
