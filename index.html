@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Projeto Abraço">
         <meta name="description" content="Uma ONG de combate e prevenção ao suicídio disposta a ouvir e abraçar.">
-        <meta name="keywords" content="Projeto abraço, Apoio psicológico, Suicídio, Acolhimento, Abraço, Prevenção ao suicídio, Socorro">
+        <meta name="keywords" content="Projeto abraço, Apoio psicológico, Acolhimento, Abraço, Prevenção, Socorro, levandoabraco, Levando Abraço, Levandro Abraco, projeto abraco">
         <meta name="viewport" content="width=device-width, initial-scale-1.0">
         <title>Projeto Abraço</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -14,23 +14,22 @@
     </head>
     <body>
         <header>
+            <div class="fixed-header">
+                <a href="index.html">
+                    <img src="IMAGENS/logo_icon.png" alt="Projeto abraço logo">
+                    <span>PROJETO <strong class="abraco">ABRAÇO</strong></span>
+                </a>
+                <nav class="pc-menu">
+                    <ul>
+                        <li><a onclick="rollToPosition('home')">Home</a></li>
+                        <li><a onclick="rollToPosition('intro')">Intro</a></li>
+                        <li><a onclick="rollToPosition('projeto')">Projeto</a></li>
+                        <li><a onclick="rollToPosition('contato')">Contato</a></li>
+                        <li><a onclick="rollToPosition('colab')">Como colaborar?</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="mask">
-                <div class="fixed-header">
-                    <a href="index.html">
-                        <img src="IMAGENS/logo_icon.png" alt="Projeto abraço logo">
-                        <span>PROJETO <strong class="abraco">ABRAÇO</strong></span>
-                    </a>
-                    <nav class="pc-menu">
-                        <ul>
-                            <li><a onclick="rollToPosition('home')">Home</a></li>
-                            <li><a onclick="rollToPosition('intro')">Intro</a></li>
-                            <li><a onclick="rollToPosition('projeto')">Projeto</a></li>
-                            <li><a onclick="rollToPosition('contato')">Contato</a></li>
-                            <li><a onclick="rollToPosition('colab')">Como colaborar?</a></li>
-                        </ul>
-                    </nav>
-                    <nav class="mobile-menu"></nav>
-                </div>
                 <main class="header-main">
                     <div class="costas"></div>
                     <blockquote cite="Mario Quintana">"<span class="abraco">Abraçar</span> é dizer com as mãos o que a boca não consegue, porque nem sempre existe palavra para dizer tudo." - Mario Quintana</blockquote>
@@ -95,20 +94,20 @@
             <section id="colab">
                 <h1>Colabore conosco!</h1>
                 <div class="voluntario">
-                        <div class="web">
+                    <div class="web">
                         <a href="https://web.whatsapp.com/send?phone=5541999161396&text=*Quero ser voluntário*" target="_blank"><img src="https://static.whatsapp.net/rsrc.php/yz/r/lOol7j-zq4u.svg" alt="">
-                        <p>Entre em contato</a></p>
-                        <p>Seja um voluntário</p>
+                        <p>Entre em contato</p>
+                        <p>Seja um voluntário</p></a>
                     </div>
-                    <!-- <div class="cel">
+                    <div class="cel">
                         <a href="https://api.whatsapp.com/send?phone=5541999161396&text=*Quero ser voluntário*" target="_blank"><img src="https://static.whatsapp.net/rsrc.php/yz/r/lOol7j-zq4u.svg" alt="">
                         <p>Entre em contato</a></p>
                         <p>Seja um voluntário</p>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="doar">
                     <img src="IMAGENS/logo-pix-icone-1024.png" alt="">
-                    <p>PIX: </p>
+                    <p>PIX: +55 41 999161396</p>
                     <p>Faça uma doação</p>
                 </div>
             </section>
@@ -132,5 +131,6 @@
         </footer>
         <script src="Javascript/rollTo.js"></script>
         <script src="Javascript/menu.js"></script>
+        <div class="top-button" onclick="rollToPosition('home')">&uarr;</div>
     </body>
 </html>
