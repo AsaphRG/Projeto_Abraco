@@ -21,13 +21,13 @@ function rollToPosition(pos) {
     });
 }
 
-function buttonVisualization() {
-    let menu = document.querySelector(".top-button");
-    if (window.scrollY != 0) {
-        menu.style.display = flex;
-    } else {
-        menu.style.display = none;
-    }
-}
+// function buttonVisualization() {
+//     let menu = document.querySelector(".top-button");
+//     if (window.scrollY != 0) {
+//         menu.style.display = flex;
+//     } else {
+//         menu.style.display = none;
+//     }
+// }
 
-window.addEventListener("scroll", buttonVisualization)
+// window.addEventListener("scroll", buttonVisualization)

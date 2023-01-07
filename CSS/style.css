@@ -384,7 +384,7 @@ footer address .email {
     margin: 1vw 0;
 }
 
-.top-button {
+.top-button, .credits {
     display: none;
 }
 
@@ -510,6 +510,16 @@ footer address .email {
         flex-direction: column;
     }
 
+    .cel {
+        display: block !important;
+    }
+
+    .web {
+        display: none !important;
+    }
+
+    /* Rodapé */
+
     footer {
         flex-direction: column;
     }
@@ -523,7 +533,7 @@ footer address .email {
     }
 
     .top-button {
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         position: fixed;
@@ -533,6 +543,14 @@ footer address .email {
         width: 10vw;
         height: 10vw;
         border-radius: 50%;
+    }
+
+    iframe {
+        max-width: 90%;
+    }
+
+    footer img {
+        width: 90%;
     }
 
 }
